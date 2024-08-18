@@ -6,53 +6,35 @@
 
 using namespace std;
 
-using ll = long long;
-
 int main()
 {
     vector<string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-    vector<string> strs_new = {"eat", "tea", "tan", "ate", "nat", "bat"};
+    unordered_map<string, vector<string>> anagrams;
 
+    // Group strings by their sorted version
+    for (const string& str : strs)
+    {
+        string sorted_str = str;
+        sort(sorted_str.begin(), sorted_str.end());
+        anagrams[sorted_str].push_back(str);
+    }
+
+    // Collect the grouped anagrams
     vector<vector<string>> groupAnagrams;
-
-    for (int i = 0; i < strs.size(); i++)
+    for (const auto& pair : anagrams)
     {
-        sort(strs_new[i].begin(), strs_new[i].end());
+        groupAnagrams.push_back(pair.second);
     }
 
-    unordered_map<int, vector<string>> anagrams;
-
-    for (int i = 0; i < strs.size(); i++)
+    // Print the grouped anagrams
+    for (const auto& group : groupAnagrams)
     {
-        for (int j = i; j < strs.size(); j++)
+        for (const string& str : group)
         {
-            if (strs_new[i] == strs_new[j])
-            {
-                anagrams[i].push_back(strs[j]);
-            }
+            cout << str << " ";
         }
+        cout << "\n";
     }
 
-    for (int i = 0; i < anagrams.size(); i++)
-    {
-        for (int j = 0; j < anagrams[i].size(); j++)
-        {
-            groupAnagrams[i].push_back(anagrams[i][j]);
-        }
-    }
-
-    for (int i = 0; i < groupAnagrams.size(); i++)
-    {
-        for (int j = 0; j < groupAnagrams[i].size(); j++)
-        {
-            cout << groupAnagrams[i][j] << " \n";
-        }
-        
-    }
-    
-    
-
-
-    
     return 0;
 }
