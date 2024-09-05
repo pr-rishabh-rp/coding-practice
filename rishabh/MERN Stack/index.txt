@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../Video%201/index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Code goes here -->
+
+    <footer>
+        <nav>
+            <a href="../Video%2013/index.html">Previous</a>
+            <a href="../Video%2015/index.html">Next</a>
+        </nav>
+    </footer>
+</body>
+</html>

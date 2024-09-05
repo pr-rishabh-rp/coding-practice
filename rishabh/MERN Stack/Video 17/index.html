@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            background-color: #AAF6FF;
+        }
+        .wheatish-background{
+            background-color: wheat;
+        }
+        .marginpadding{
+            margin: 20px;
+            padding: 20px;
+        }
+        .center{
+            text-align: center;
+        }
+
+        div > p{
+            background-color: antiquewhite;
+            color: blue;
+        }
+
+        div p{
+            background-color: orange;
+            color: black;
+        }
+
+        * { /*Universal selector*/
+            margin:40px;
+            padding:10px;
+        }
+
+        a:visited{ /* Pseudo Selector */
+            color:darkolivegreen;
+        }
+
+        a:hover {
+            background-image: url("transparent.png");
+            background-size: 75%;
+            width: 300px;
+            height: 300px;
+        }
+
+        a:active {
+            background-image: url("stop_clocking_links.jpg");
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../Video%201/index.html">Home</a>
+        </nav>
+    </header>
+
+    <h1>CSS Selectors</h1>
+
+    <p>There are several ways to select elements in CSS. In this one, we will cover the most common ways to select elements.</p>
+
+    <div>
+        Here is a picture of Bulma from Dragon Ball manga (My brother has the manga)<br>
+        <img src="bulmamangafull.webp" alt="Bulma from Dragon Ball" width="200">
+    </div>
+
+    <br>
+
+    <div class="wheatish-background">
+        Now let's try it with Son Goku:<br>
+        <img class="marginpadding center" src="son_goku.png" alt="Son Goku" width="200px">
+        <br>
+
+        Eh to be frank it still looks weird cuz I didn't do anything lmao
+    </div>
+
+    <div>
+        <p>Monkey King this should be child selector but the descendent selector that comes after child selector is kinda overwriting it</p>
+    </div>
+
+    <span>
+        <p>
+            Your brain tricks you into thinking.
+        </p>
+    </span>
+
+    <div>
+        <span>
+            <p>
+                Descendent selector.
+            </p>
+        </span>
+    </div>
+
+    <a href="https://www.w3.org/">W3 website</a>
+
+    <footer>
+        <nav>
+            <a href="../Video%2016/index.html">Previous</a>
+            <a href="../Video%2018/index.html">Next</a>
+        </nav>
+    </footer>
+</body>
+</html>

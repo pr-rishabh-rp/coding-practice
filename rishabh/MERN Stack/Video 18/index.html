@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes in CSS</title>
+    <style>
+        .box {
+            background-color: aqua;
+
+        }
+
+        .box1 {
+            color: coral;
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            color: red;
+            border: 2px solid black;
+            margin: 40px;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../Video%201/index.html">Home</a>
+        </nav>
+    </header>
+
+    <h1>Box</h1>
+
+    <p>
+        Everything in CSS is a box. We can control the size, position, and style of these boxes. We can also control the
+        space between these boxes.
+    </p>
+
+    <div class="box box1">
+        This is a box.
+    </div>
+
+    <div class="box box2">
+        This is another box.
+    </div>
+
+    <p>
+        Padding is a space around the content of the box, and this area includes background properties of a box.<br>
+        <h2>Calculating the total dimension of the element</h2>
+
+        The total width and height of the element is calculated with the formula:<br><br>
+        <code>
+        Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+            <br><br>
+        Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin
+        </code>
+    </p>
+
+    <p>
+        <code>Box-sizing: border-box; </code> property is used to include padding and border in the total width and height of the box. <br>
+        Matlab agar maine bola ki width 200px ki honi chahiye toh phir <em>Total Width</em> ki value 200px.
+    </p>
+
+    <p>
+        <code>Note:</code> When two margins of two elements are touching each other, then the margin of both the elements collapse into one margin with the greatest margin out of the two. You can see this above. Inspect the boxes above.
+    </p>
+
+    <footer>
+        <nav>
+            <a href="../Video%2013/index.html">Previous</a>
+            <a href="../Video%2015/index.html">Next</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

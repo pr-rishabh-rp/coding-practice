@@ -1,0 +1,44 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: 75;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.0); 
+    color: rgba(250,250,250,0.80);
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    font-family: monospace;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.lets-a-go {
+    animation: rainbow 5s linear infinite;
+    }
+
+    .lets-a-go:hover {
+        animation-play-state: paused;
+    }
+

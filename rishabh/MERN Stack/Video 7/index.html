@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+
+<body>
+    <header>
+        <h1>Learning Tutorial</h1>
+        <nav>
+            <a href="../Video%201/index.html">Home</a>
+        </nav>
+    </header>
+    
+    <h1>Enter details to access secret military documents unearthed by our operative in New Zealand</h1>
+    <form action="post">
+        <div>
+
+            <label for="policy">Policy ID goes here</label>
+            <input type="text" name="policy" placeholder="Enter Policy ID" pattern="[A-Za-z0-9]+"
+                title="Please enter alphanumeric characters only" autofocus required>
+
+        </div>
+        <div>
+
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="male">
+            <input type="radio" name="Gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" id="others">
+            <label for="others">Others</label>
+
+        </div>
+        <div>
+
+            <label for="propaganda">Subscribe to our Propaganda</label>
+            <input type="checkbox" name="propaganda" id="propaganda">
+
+        </div>
+        <div>
+
+            <label for="comment"></label>
+            <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+
+
+        </div>
+        <div>
+
+            <select name="mechanism" id="mechanism">
+                <option value="Troubadour">Troubadour</option>
+                <option value="Glassing">Glassing</option>
+                <option value="Marionette">Marionette</option>
+                <option value="Sacrifice">Sacrifice</option>
+                <option value="Volunteering">Volunteering</option>
+            </select>
+        </div>
+        <div>
+            <input type="color" name="raindrop" id="raindrop" required>
+            <label for="raindrop">What color is your raindrop</label>
+        </div>
+    </form>
+
+    <footer>
+        <nav>
+            <a href="../Video%206/index.html">Previous Page</a>
+            <a href="../Video%208/index.html">Next Page</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
