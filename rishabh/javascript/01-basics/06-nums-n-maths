@@ -1,0 +1,32 @@
+const score = 400
+
+const balance = new Number(100)
+console.log(balance)
+
+const hundred = 10000000000
+
+console.log(hundred.toLocaleString('en-IN'))
+
+
+
+
+
+
+
+console.log(Math)
+console.log("Absolute value of -50:", Math.abs(-50))
+console.log("Floor value of 4.7:", Math.floor(4.7))
+console.log("Ceiling value of 4.1:", Math.ceil(4.1))
+console.log("Square root of 64:", Math.sqrt(64))
+console.log("Power of 2^3:", Math.pow(2, 3))
+console.log("Random number between 0 and 1:", Math.random())
+
+
+console.log(Math.random())
+
+console.log((Math.random()*10) + 1)
+
+const max = 20;
+const min = 10;
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
